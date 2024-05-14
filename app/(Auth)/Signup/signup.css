@@ -1,0 +1,15 @@
+.Signupbtn{
+    background-color: var(--main-color);
+    Height: 48px;
+    border-radius: 8px;
+    Padding: 14px, 16px, 14px, 16px;
+    Gap: 8px;
+}
+.card-body .top h5 {
+    color: var(--primary-color);
+    font-family: Rubik;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+}

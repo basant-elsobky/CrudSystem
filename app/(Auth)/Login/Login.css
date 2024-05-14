@@ -1,0 +1,24 @@
+.card-body .top p {
+    color: var(--primary-color) !important;
+    font-family: Rubik;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+}
+
+.loginbtn {
+    background-color: var(--main-color);
+    Height: 48px;
+    border-radius: 8px;
+    Padding: 14px, 16px, 14px, 16px;
+    Gap: 8px;
+}
+.card-body .form-label{
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+
+    
+}
