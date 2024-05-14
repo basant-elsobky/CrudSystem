@@ -12,8 +12,14 @@
     "@supabase/auth-helpers-nextjs": "^0.10.0",
     "@supabase/supabase-js": "^2.43.1",
     "bootstrap": "^5.3.3",
+    "fast-csv": "^5.0.1",
+    "file-saver": "^2.0.5",
+    "json2csv": "^6.0.0-alpha.2",
     "next": "14.2.3",
+    "papaparse": "^5.4.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "sheetjs": "^2.0.0",
+    "xlsx": "^0.18.5"
   }
 }

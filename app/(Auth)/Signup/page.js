@@ -1,27 +1,36 @@
 'use client'
 import Link from 'next/link'
 import './signup.css'
-import { useContext, useState } from 'react'
+import { useState } from 'react'
 import supabase from '@/app/Config/supabaseclient'
+
+import { userContext } from '@/app/Context/userContext'
+import { useRouter } from 'next/navigation';
 function page() {
-    const [name, setname] = useState('')
+    const router = useRouter()
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [check, setcheck] = useState('');
 
+
     const handleSignup = async (e) => {
         e.preventDefault();
-        let {data,error} = await supabase.auth.signUp({
+        let { data, error } = await supabase.auth.signUp({
             email,
             password,
         });
         setEmail('');
         setPassword('');
-        // setcheck(<>
-        //     <div class="alert alert-success" role="alert">
-        //         {error ? error.message : "Here is a gentle confirmation that your account was successful created."}
-        //     </div>
-        // </>)
+        setcheck(<>
+            <div class="alert alert-success" role="alert">
+                {error ? error.message : "Here is a gentle confirmation that your account was successful created."}
+            </div>
+        </>)
+        setTimeout(() => {
+
+            router.push('/')
+        }, 2000);
+
 
     };
     return (
@@ -40,12 +49,7 @@ function page() {
                                     </div>
                                     <div className="p-2 mt-4">
                                         <form onSubmit={handleSignup} >
-                                            <div className="mb-3">
-                                                <label className="form-label" for="useremail">
-                                                    Name
-                                                </label>
-                                                <input onChange={(e) => setname(e.target.value)} className="form-control" id="useremail" placeholder="Enter Your name" type="text" />
-                                            </div>
+
                                             <div className="mb-3">
                                                 <label className="form-label" htmlFor="username">
                                                     Email
@@ -57,14 +61,29 @@ function page() {
                                                     type="email"
                                                     title="Please enter a valid email address"
                                                     required
+                                                    value={email}
+                                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+
                                                 />
+                                                <span class="error mt-1">Invalid Format</span>
+
                                             </div>
 
-                                            <div className="mb-3">
-                                                <label className="form-label" for="userpassword">
+                                            <div className="mb-4 mt-3">
+                                                <label className="form-label mt-3" for="userpassword">
                                                     Password
                                                 </label>
-                                                <input onChange={(e) => setPassword(e.target.value)} className="form-control" id="userpassword" placeholder="Enter Your password" type="password" />
+                                                <input
+                                                    onChange={(e) => setPassword(e.target.value)}
+                                                    value={password}
+                                                    className="form-control mb-4" id="userpassword"
+                                                    placeholder="Enter Your password"
+                                                    type="password"
+                                                    minLength="8"
+                                                />
+                                                {password.length > 0 && password.length < 8 && (
+                                                    <span className="validation-message text-danger">Password must be at least 8 characters</span>
+                                                )}
                                                 {check}
                                             </div>
                                             <div className="mt-3 w-100">
@@ -96,9 +115,9 @@ function page() {
                         </div>
                     </div>
 
-                </div>
+                </div >
 
-            </div>
+            </div >
         </>
     )
 }
