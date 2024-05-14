@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import './navbar.css'
 import { useContext, useEffect } from 'react'
-import { userContext } from '@/app/Context/userContext'
+import { userContext } from '@/app/Context/usercontext'
 import supabase from '@/app/Config/supabaseclient'
 import { useRouter } from 'next/navigation';
 function Navbar() {
