@@ -4,7 +4,7 @@ import './signup.css'
 import { useState } from 'react'
 import supabase from '@/app/Config/supabaseclient'
 
-import { userContext } from '@/app/Context/userContext'
+import { userContext } from '@/app/Context/UserContext'
 import { useRouter } from 'next/navigation';
 function page() {
     const router = useRouter()
