@@ -3,7 +3,7 @@ import Link from 'next/link'
 import './Login.css'
 import { useContext, useState } from 'react';
 import supabase from '@/app/Config/supabaseclient';
-import { userContext } from '@/app/Context/UserContext';
+import { userContext } from '@/app/Context/Usercontext';
 import { useRouter } from 'next/navigation';
 
 function Page() {

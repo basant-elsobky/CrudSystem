@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { UserContextProvider } from "./Context/UserContext";
+import { UserContextProvider } from "./Context/Usercontext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
