@@ -2,7 +2,7 @@
 import { useContext, useEffect, useState } from 'react';
 import './Home.css'
 import supabase from '../Config/supabaseclient';
-import { userContext } from '../context/userContext';
+import { userContext } from '../Context/userContext';
 import Navbar from '../Components/Navbar/Navbar';
 import { useRouter } from 'next/navigation';
 import { saveAs } from 'file-saver';
