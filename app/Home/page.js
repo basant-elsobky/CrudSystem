@@ -244,7 +244,7 @@ export default function Home() {
                     <th>{productsitem.price}</th>
                     <th>{productsitem.Quantity}</th>
                     <th>
-                      <button onClick={() => handleEdit(productsitem.id, productsitem.name, productsitem.price, productsitem.Quantity)} className='btn waves-effect waves-light'>Edit</button>
+                      <button onClick={() => handleEdit(productsitem.id, productsitem.name, productsitem.price, productsitem.Quantity)} className='Edite_btn'>Edit</button>
 
                       <button onClick={() => handledelete(productsitem.id)} className='btn btn-danger waves-effect waves-light'>Delete</button>
 
@@ -259,7 +259,7 @@ export default function Home() {
 
             {products?.length === 0 ? '' : (
               <button onClick={downloadProducts}
-                className='btn waves-effect' >Download Products</button>
+                className='downloadbtn' >Download Products</button>
             )}
           </div>
         </section>

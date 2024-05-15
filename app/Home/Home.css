@@ -33,3 +33,19 @@
     background-color: var(--main-color);
     margin-top: 10px;
 }
+.Edite_btn{
+    margin-right: 10px;
+    height: 40px;
+    margin-bottom: 10px;
+    width: 60px;
+    background-color: white;
+    color: var(--main-color);
+    border: solid var(--main-color);
+}
+.downloadbtn{
+    margin-right: 10px;
+    height: 40px;
+    background-color: white;
+    color: var(--main-color);
+    border: solid var(--main-color);
+}
