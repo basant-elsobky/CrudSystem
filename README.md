@@ -20,7 +20,9 @@ Frontend: HTML, CSS, JavaScript (React.js), Nextjs .
 Backend-Database: supabase.
 
 # Setup
-Clone the Repository: bash Copy code git clone https://github.com/basant-elsobky/CrudSystem.git Install Dependencies: bash Copy code cd crud-system npm install
+Clone the Repository:
+
+bash Copy code git clone https://github.com/basant-elsobky/CrudSystem.git Install Dependencies: bash Copy code cd crud-system npm install
 
 Set Up Environment Variables: Create a .env file in the root directory. Define environment variables for database connection details, such as DB_HOST, DB_PORT, DB_NAME, etc.
 
