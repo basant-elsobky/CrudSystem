@@ -10,14 +10,14 @@ import { saveAs } from 'file-saver';
 import Papa from 'papaparse';
 
 export default function Home() {
-
-
-
   const router = useRouter()
+  
   useEffect(() => {
-
     require("bootstrap/dist/js/bootstrap.bundle.min.js");
-  }, []);
+    }, []);
+
+
+
   const [name, setname] = useState('')
   const [price, setprice] = useState('')
   const [quantity, setquantity] = useState('')
@@ -185,15 +185,15 @@ export default function Home() {
 
       <Navbar />
       <div className="container w-100">
-        <div className="inputs_field d-flex align-items-center justify-content-center gap-5">
-          <div>
+        <div className="inputs_field d-flex align-items-center justify-content-center row">
+          <div className='col-md-3 col-sm-12'>
             <label className="form-label" for="username">
               Name
             </label>
             <input onChange={(e) => setname(e.target.value)} value={name} className="form-control" id="username" placeholder="Enter your name" type="text" required />
           </div>
 
-          <div>
+          <div  className='col-md-3 col-sm-12'>
             <label className="form-label" for="username">
               Price
             </label>
@@ -205,7 +205,7 @@ export default function Home() {
             }} onChange={(e) => setprice(e.target.value)} value={price} className="form-control" id="username" placeholder="Enter price" type="number" required />
           </div>
 
-          <div>
+          <div  className='col-md-3 col-sm-12'>
             <label className="form-label" for="username">
               Quantity
             </label>
@@ -217,11 +217,14 @@ export default function Home() {
               }
             }} onChange={(e) => setquantity(e.target.value)} value={quantity} className="form-control" id="username" placeholder="Enter Quantity" type="number" required />
           </div>
+          <div  className='col-md-3 col-sm-12'>
+
           {editMode ? (
             <button onClick={handleEditSubmit}>Edit</button>
           ) : (
             <button onClick={handlesubmit}>Add</button>
           )}
+          </div>
         </div>
         <section>
           <div class="container py-2 mt-5">

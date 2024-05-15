@@ -10,7 +10,6 @@
     gap: 12px;
     border-radius: 8px 0px 0px 0px;
     border: 1px 0px 0px 0px;
-   
 
 }
 
@@ -22,17 +21,15 @@
     text-align: left;
 
 }
-
 .inputs_field button {
     height: 48px;
     padding: 14px 48px 14px 48px;
-    gap: 8px;
     font-family: Rubik;
     font-size: 14px;
     font-weight: 500;
-    line-height: 20px;
     text-align: center;
     color: white;
     border-radius: 8px 0px 0px 0px;
     background-color: var(--main-color);
+    margin-top: 10px;
 }
