@@ -31,15 +31,25 @@ Run the Application: bash Copy code npm start This will start both the frontend 
 Access the Application:Open your web browser and navigate to http://localhost:3000 to access the CRUD system.
 
 # Usage
-1-Add a Product:Click on the "Add Product" button click after fill all the details of new product and click add to add it to the database. 
+1-Add a Product:
 
-2-Update a Product:Click on the "Edit" button next to the product you want to update. Modify the details in the form that appears and click "Update" to save the changes. 
+Click on the "Add Product" button click after fill all the details of new product and click add to add it to the database. 
 
-3-Delete a Product:Click on the "Delete" button next to the product you want to remove from the database. 
+2-Update a Product:
 
-4-Login/Signup:Click on the "Login" or "Signup" button to access the authentication system. After logging in, you'll be able to view your database. 
+Click on the "Edit" button next to the product you want to update. Modify the details in the form that appears and click "Update" to save the changes. 
 
-5-Download Products:Click on the "Download" button to export products from the database in any format.
+3-Delete a Product:
+
+Click on the "Delete" button next to the product you want to remove from the database. 
+
+4-Login/Signup:
+
+Click on the "Login" or "Signup" button to access the authentication system. After logging in, you'll be able to view your database. 
+
+5-Download Products:
+
+Click on the "Download" button to export products from the database in any format.
 
 # Demo
 You can view a live demo of the App here  https://crud-system-s1kx-git-main-basant-elsobkys-projects.vercel.app/.
