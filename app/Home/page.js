@@ -25,6 +25,7 @@ export default function Home() {
   const { user } = useContext(userContext)
   const [editMode, setEditMode] = useState(false);
   const [editProductId, setEditProductId] = useState(null);
+ 
   useEffect(() => {
     {
       const getData = async () => {
@@ -182,8 +183,9 @@ export default function Home() {
   
   return (
     <>
-
-      <Navbar />
+{user &&user.id?(
+  <>
+  <Navbar />
       <div className="container w-100">
         <div className="inputs_field d-flex align-items-center justify-content-center row">
           <div className='col-md-3 col-sm-12'>
@@ -264,6 +266,9 @@ export default function Home() {
           </div>
         </section>
       </div>
+  </>
+):router.push('/Login')}
+     
 
     </>
   );
