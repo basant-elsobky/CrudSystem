@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CRUD System for Product Management
+This project is a simple CRUD (Create, Read, Update, Delete) system for managing products. It provides functionality to insert new products, update existing ones, and delete products from the database. Additionally, users can sign up and log in to view their database, and there's a download button to export products in any format.
 
-## Getting Started
+# Features
+1-Add: Add new products to the database with details such as name, price, and quantity. 
 
-First, run the development server:
+2-Read: View a list of all products currently stored in the database. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+3-Update: Modify the details of existing products, including their name, price, and quantity. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4-Delete: Remove products from the database. 
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+5-Login/Signup: Users can sign up for an account and log in to view their database.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+6-Download: Export products from the database in any format.
 
-## Learn More
+# Technologies Used
+Frontend: HTML, CSS, JavaScript (React.js), Nextjs .
 
-To learn more about Next.js, take a look at the following resources:
+Backend-Database: supabase.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Setup
+Clone the Repository:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+bash Copy code git clone https://github.com/basant-elsobky/CrudSystem.git Install Dependencies: bash Copy code cd crud-system npm install
 
-## Deploy on Vercel
+Set Up Environment Variables: Create a .env file in the root directory.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Run the Application: bash Copy code npm start This will start both the frontend and backend servers.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Access the Application:Open your web browser and navigate to http://localhost:3000 to access the CRUD system.
+
+# Usage
+1-Add a Product:
+
+Click on the "Add Product" button click after fill all the details of new product and click add to add it to the database. 
+
+2-Update a Product:
+
+Click on the "Edit" button next to the product you want to update. Modify the details in the form that appears and click "Update" to save the changes. 
+
+3-Delete a Product:
+
+Click on the "Delete" button next to the product you want to remove from the database. 
+
+4-Login/Signup:
+
+Click on the "Login" or "Signup" button to access the authentication system. After logging in, you'll be able to view your database. 
+
+5-Download Products:
+
+Click on the "Download" button to export products from the database in any format.
+
+# Demo
+You can view a live demo of the App here  https://crud-system-s1kx-git-main-basant-elsobkys-projects.vercel.app/.
+
+# Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps: 
+
+1-Fork the repository. 
+
+2-Create a new branch (git checkout -b feature/new-feature). Make your changes. 
+
+3-Commit your changes (git commit -am 'Add new feature').
+
+4-Push to the branch (git push origin feature/new-feature).
+
+5-Create a new Pull Request.
