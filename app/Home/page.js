@@ -148,11 +148,7 @@ export default function Home() {
 
 
   const downloadProducts = async () => {
-    if (!products) {
-      console.error('No products data available.');
-      return;
-    }
-
+  
     const format = prompt('Choose download format (csv, xlsx, json):');
     if (!format) return; 
   
@@ -269,7 +265,6 @@ export default function Home() {
   </>
 ):router.push('/Login')}
      
-
     </>
   );
 }

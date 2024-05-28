@@ -90,7 +90,7 @@ function Page() {
                         </button>
                       </div>
                       <div className="mt-4 text-center">
-                        <div className="or" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <div className="or d-flex align-content-center justify-content-center" >
                           <hr style={{ flex: 1 }} />
                           <span style={{ margin: '0 10px' }}>OR</span>
                           <hr style={{ flex: 1 }} />
